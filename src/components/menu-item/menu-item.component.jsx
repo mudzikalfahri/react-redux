@@ -1,13 +1,20 @@
 import React from 'react';
 import './menu-item.styles.scss';
 
-const MenuItem = () => (
+const MenuItem = ({ title, imageUrl, color}) => (
     <div className='menu-item'>
-        <div className='content'>
-          <div className='title'>
-              YEAR END
-          </div>
-        </div>
+        <div 
+        className='background-image'
+        style={{
+        backgroundImage: `url(${imageUrl})`
+        }}>
+            
+      </div>
+      <div className='content' style={{background: `${color}`}}>
+            <div className='title'>
+                {title}
+            </div>
+            </div>
     </div>
 );
 
