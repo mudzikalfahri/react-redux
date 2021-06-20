@@ -27,9 +27,9 @@ render(){
             <div className="navbar">
                 <div className="menu"
                 style={(this.state.toggle) ? ({top:0}) : ({top:-150})}>
-                        <div className="menu-link">
+                        <Link to='/signin' className="menu-link" onClick={this.resetMenu}>
                             Sign In
-                        </div>
+                        </Link>
                         <Link to = '/shop' className="menu-link" onClick={this.resetMenu}>
                             Shop
                         </Link>

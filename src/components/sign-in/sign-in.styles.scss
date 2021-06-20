@@ -1,0 +1,20 @@
+.sign-in {
+    margin-top: 100px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    .title-signin{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 500;
+
+    }
+    .button-container{
+        display: flex;
+        padding-top: 10px;
+        justify-content: space-between;
+        margin: auto;
+        width: 95%;
+    }
+  }
