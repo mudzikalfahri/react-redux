@@ -4,13 +4,15 @@ import { ReactComponent as Arrow } from '../../assets/next-menu.svg';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Cart } from '../../assets/cart-shop.svg';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
+import { auth } from '../../firebase/firebase.utils'
 
 class NavBar extends React.Component{
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             toggle:false
         }
+        
 }
 
 navToggle = () => {
@@ -27,9 +29,14 @@ render(){
             <div className="navbar">
                 <div className="menu"
                 style={(this.state.toggle) ? ({top:0}) : ({top:-150})}>
-                        <Link to='/signin' className="menu-link" onClick={this.resetMenu}>
-                            Sign In
+                        {this.props.currentUser ? 
+                        <div className='menu-link out' onClick={() => auth.signOut()}>
+                        Sign Out</div>
+                         : (
+                        <Link className='menu-link' to='/signin' onClick={this.resetMenu}>
+                        Sign In
                         </Link>
+                        )}
                         <Link to = '/shop' className="menu-link" onClick={this.resetMenu}>
                             Shop
                         </Link>

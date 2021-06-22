@@ -2,6 +2,8 @@ import React from 'react';
 import './sign-in.styles.scss';
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../button/button.component';
+import { Link } from 'react-router-dom';
+import { signInWithGoogle } from '../../firebase/firebase.utils';
 
 export default class SignIn extends React.Component {
     constructor(props){
@@ -45,12 +47,16 @@ export default class SignIn extends React.Component {
                 placeholder='Password'
                 required
               />
+              <div className="button-container">
+                <CustomButton type='submit'>Log In</CustomButton>
+                <CustomButton>Sign Up</CustomButton>
+              </div>
+              <div className="googlesign">
+                <Link to='#' onClick={signInWithGoogle}>Sign In with Google</Link>
+              </div> 
             </form>
 
-            <div className="button-container">
-                <CustomButton type='submit'>Login</CustomButton>
-                <CustomButton>Sign Up</CustomButton>
-            </div>
+            
           </div>
         );
       }
