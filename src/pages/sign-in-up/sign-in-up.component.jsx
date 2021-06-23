@@ -4,7 +4,7 @@ import SignIn from '../../components/sign-in/sign-in.component';
 
 export default function SignInSignUpPage() {
     return (
-        <div class='sign-in-up'>
+        <div className='sign-in-up'>
             <SignIn/>
         </div>
     )

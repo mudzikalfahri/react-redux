@@ -14,7 +14,7 @@ const MenuItem = ({ title, imageUrl, color}) => (
             <div className='title'>
                 {title}
             </div>
-            </div>
+        </div>
     </div>
 );
 

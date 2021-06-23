@@ -2,4 +2,19 @@
     padding-top: 100px;
     padding-left: 10%;
     padding-right: 10%;
+    .cathegory-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #E5E5E5;
+        margin-bottom: 40px;
+        padding: 5px;
+        div{
+            cursor: pointer;
+            text-decoration: underline;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+    }
 }

@@ -14,6 +14,7 @@ const CollectionItem = ({ title, id, name, price, imageUrl }) => (
         <span className='title-footer'>{title}</span>
         <span className='name'>{name}</span>
         <span className='price'>$ {price}</span>
+        <button className='addcart'>Add to cart</button>
     </div>
   </div>
 );
