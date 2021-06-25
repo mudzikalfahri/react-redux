@@ -6,14 +6,6 @@
     background-color: #FF0099;
     cursor: pointer;
     transition: background-color 0.5s;
-    &:last-child{
-        background-color: white;
-        border: 1px solid #FF0099;
-        color: #FF0099;
-        &:hover{
-            background-color: white;
-        }
-    }
     &:hover{
         background-color: #DB00FF;
     }

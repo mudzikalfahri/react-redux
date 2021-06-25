@@ -3,4 +3,5 @@ body{
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Roboto Mono', monospace;
     min-width: 800px;
+    box-sizing: border-box;
 }

@@ -49,10 +49,10 @@ export default class SignIn extends React.Component {
               />
               <div className="button-container">
                 <CustomButton type='submit'>Log In</CustomButton>
-                <CustomButton>Sign Up</CustomButton>
+                <Link to='/signup' className='signup-to'><span>Sign Up</span></Link>
               </div>
               <div className="googlesign">
-                <Link to='#' onClick={signInWithGoogle}>Sign In with Google</Link>
+                <Link to='#' onClick={signInWithGoogle}><span>Sign In with Google</span></Link>
               </div> 
             </form>
 

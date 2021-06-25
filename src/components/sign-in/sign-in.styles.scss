@@ -1,6 +1,6 @@
 .sign-in {
     margin-top: 100px;
-    width: 30vw;
+    width: 50%;
     display: flex;
     flex-direction: column;
     .title-signin{
@@ -13,13 +13,27 @@
     .button-container{
         display: flex;
         padding-top: 10px;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin: auto;
         width: 95%;
+        .signup-to{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 47%;
+            text-align: center;
+            span{
+                font-size: 16px;
+                color: black;
+            }
+        }
     }
     .googlesign{
         margin-top: 30px;
         color: #000;
         text-align: center;
+        span{
+            color: grey;
+        }
     }
   }
