@@ -1,0 +1,31 @@
+.cart-preview{
+    position: fixed;
+    width: 300px;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    animation-name: show;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    @keyframes show{
+        0%{right: -300px;}
+        100%{right: 0;}
+    }
+    .close {
+        cursor: pointer;
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .cart-item{
+        height: 400px;
+        width: 90%;
+        border: 1px solid black;
+    }
+}

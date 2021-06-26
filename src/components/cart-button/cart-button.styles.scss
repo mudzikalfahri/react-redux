@@ -1,0 +1,15 @@
+.cart{
+    width: 40px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .cart-num{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 14px;
+    }
+}
