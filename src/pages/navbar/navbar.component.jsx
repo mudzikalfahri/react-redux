@@ -4,7 +4,8 @@ import { ReactComponent as Arrow } from '../../assets/next-menu.svg';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Cart } from '../../assets/cart-shop.svg';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
-import { auth } from '../../firebase/firebase.utils'
+import { auth } from '../../firebase/firebase.utils';
+import { connect } from 'react-redux';
 
 class NavBar extends React.Component{
     constructor(props) {
@@ -63,4 +64,8 @@ render(){
     
 
 
-export default NavBar;
+const mapStateToProps = state => ({
+    currentUser: state.user.currentUser
+  });
+  
+export default connect(mapStateToProps)(NavBar);

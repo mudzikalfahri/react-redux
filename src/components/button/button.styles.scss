@@ -2,9 +2,10 @@
     width: 47%;
     height: 40px;
     border: none;
-    color: white;
-    background-color: #FF0099;
+    color: black;
+    background-color: #FFFB93;
     cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
     transition: background-color 0.5s;
     &:hover{
         background-color: #DB00FF;
