@@ -25,9 +25,14 @@
         display: flex;
         justify-content: space-between;
     }
-    .cart-item{
+    .cart-items{
         height: 400px;
         width: 90%;
         font-size: 14px;
+    }
+    .subtotal{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
     }
 }
