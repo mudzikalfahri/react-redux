@@ -14,25 +14,25 @@ class Directory extends React.Component {
           title: 'YEAR END SALE 40%',
           imageUrl: 'https://i.ibb.co/Pzd0LRZ/junko-nakase-Q-72wa9-7-Dg-unsplash.jpg',
           id: 1,
-          color: '#FFF500'
+          color: '#FFF846'
         },
         {
           title: 'FOOTWEAR',
           imageUrl: 'https://i.ibb.co/CMPt35J/camila-damasio-m-WYhr-Oi-Agm-A-unsplash.jpg',
           id: 2,
-          color: '#9EFF00'
+          color: '#B1FF31'
         },
         {
           title: 'T-SHIRT',
           imageUrl: 'https://i.ibb.co/XZvc9CN/sarah-dorweiler-fr0-J5-GIVyg-unsplash.jpg',
           id: 3,
-          color: '#00FFFF'
+          color: '#6FFFFF'
         },
         {
           title: 'PANTS',
           imageUrl: 'https://i.ibb.co/SwZMCm5/eda-ulu-HWEj-Ie7rc7w-unsplash.jpg',
           id: 4,
-          color:'#FA00FF'
+          color:'#EA68FF'
         }
       ]
     };

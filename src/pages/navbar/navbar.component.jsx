@@ -49,7 +49,7 @@ render(){
                 ) : null
                 } */}
                 <div className="menu"
-                style={(this.state.toggle) ? ({top:0}) : ({top:-150})}>
+                style={(this.state.toggle) ? ({top:0}) : ({top:-200})}>
                         {this.props.currentUser ? 
                         <div className='menu-link out' onClick={() => auth.signOut()}>
                         Sign Out</div>
@@ -63,6 +63,9 @@ render(){
                         </Link>
                         <div className="menu-link">
                             About
+                        </div>
+                        <div className="menu-link">
+                            Contact
                         </div>
                 </div>
                 <div className="container">

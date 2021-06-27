@@ -9,11 +9,14 @@ const CartPreview = ({setToggleCart}) => {
     return (
         <div className='cart-preview'>
             <div className="close" onClick={setToggleCart}>
+                My Cart
                 <CartArrow/>
             </div>
             <div className="cart-item">
-                Cart Item
+                Your shopping cart is empty.
+                <hr/>
             </div>
+            
             <CustomButton>Checkout Items</CustomButton>
         </div>
     )
