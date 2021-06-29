@@ -117,38 +117,32 @@ const SHOP_DATA = [
     },
     {
       id: 3,
-      title: 'Jackets',
-      routeName: 'jackets',
+      title: 'Pants',
+      routeName: 'pants',
       items: [
         {
           id: 18,
-          name: 'Black Jean Shearling',
-          imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
+          name: 'Blue Jeans Slimfit',
+          imageUrl: 'https://i.ibb.co/GJvgCTf/fares-hamouche-o-Uq-Cet-RAkh-A-unsplash.jpg',
           price: 125
         },
         {
           id: 19,
-          name: 'Blue Jean Jacket',
-          imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
+          name: 'Oversized Washed Jeans',
+          imageUrl: 'https://i.ibb.co/Yy0C5tP/clikcc-Ua-luh2p-C5k-unsplash.jpg',
           price: 90
         },
         {
           id: 20,
-          name: 'Grey Jean Jacket',
-          imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
+          name: 'REVUT Ripped Jeans',
+          imageUrl: 'https://i.ibb.co/Tb38K92/klaudia-piaskowska-Zy6o-NZRdcjc-unsplash.jpg',
           price: 90
         },
         {
           id: 21,
-          name: 'Brown Shearling',
-          imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
+          name: 'WOMAN Eight Jeans',
+          imageUrl: 'https://i.ibb.co/yVGM7xb/alicia-petresc-Bci-Ccl8tj-VU-unsplash.jpg',
           price: 165
-        },
-        {
-          id: 22,
-          name: 'Tan Trench',
-          imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
-          price: 185
         }
       ]
     },

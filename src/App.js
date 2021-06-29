@@ -9,6 +9,7 @@ import React from 'react';
 import SignUp from './pages/sign-up/sign-up.component';
 import { connect } from 'react-redux';
 import { setCurrentUser } from './redux/user/user-actions';
+import ErrorPage from './pages/errorpage/errorpage.component';
 
 class App extends React.Component { 
 
@@ -42,6 +43,7 @@ class App extends React.Component {
         <NavBar/>
         <Switch>
           <Route exact path='/' component={HomePage} />
+          <Route exact path='/error' component={ErrorPage} />
           <Route path='/shop' component={ShopPage} />
           <Route exact path='/signin' render={() =>
               this.props.currentUser ? (

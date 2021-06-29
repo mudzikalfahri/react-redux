@@ -21,7 +21,7 @@ class ShopPage extends React.Component {
           <div className="catall" onClick={()=>this.setState({cat:3})}>All Products</div>
           <div className="cat1" onClick={()=>this.setState({cat:0})}>T-Shirt</div>
           <div className="cat2" onClick={()=>this.setState({cat:1})}>Footwear</div>
-          <div className="cat3" onClick={()=>this.setState({cat:2})}>Jackets</div>
+          <div className="cat3" onClick={()=>this.setState({cat:2})}>Pants</div>
         </div>
         {collections.filter((collect,ids) => this.state.cat<3 ? ids===this.state.cat : true).map(({ id, ...otherCollectionProps }) => (
           <CollectionPreview key={id} {...otherCollectionProps} />

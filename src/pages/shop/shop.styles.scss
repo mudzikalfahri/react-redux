@@ -4,17 +4,47 @@
     padding-right: 10%;
     .cathegory-list{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
-        background-color: #E5E5E5;
-        margin-bottom: 40px;
-        padding: 5px;
+        margin-bottom: 80px;
         div{
             cursor: pointer;
             text-decoration: underline;
             margin: 0 10px;
             font-size: 14px;
         }
+        .catall{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            background-color: #FFF846;
+            height: 70px;
+        }   
+        .cat1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            background-color: #B1FF31;
+            height: 70px;
+        }   
+        .cat2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            background-color: #6FFFFF;
+            height: 70px;
+        }   
+        .cat3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            background-color: #EA68FF;
+            height: 70px;
+        }   
     }
 }

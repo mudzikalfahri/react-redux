@@ -7,6 +7,9 @@
     margin-bottom: 30px;
     overflow: hidden;
     position: relative;
+    @media (max-width:820px){
+      width: 48%;
+    }
   
     .image {
       &:hover{

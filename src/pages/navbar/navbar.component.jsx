@@ -61,12 +61,12 @@ render(){
                         <Link to = '/shop' className="menu-link" onClick={this.resetMenu}>
                             Shop
                         </Link>
-                        <div className="menu-link">
+                        <Link to = '/error' className="menu-link" onClick={this.resetMenu}>
                             About
-                        </div>
-                        <div className="menu-link">
+                        </Link>
+                        <Link to = '/error' className="menu-link" onClick={this.resetMenu}>
                             Contact
-                        </div>
+                        </Link>
                 </div>
                 <div className="container">
                     <Link to='/' className="logo" onClick={this.resetMenu}>

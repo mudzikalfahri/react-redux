@@ -1,8 +1,9 @@
 import React from 'react';
 import './menu-item.styles.scss';
+import { Link } from 'react-router-dom';
 
 const MenuItem = ({ title, imageUrl, color}) => (
-    <div className='menu-item'>
+    <Link to='/shop' className='menu-item'>
         <div 
         className='background-image'
         style={{
@@ -15,7 +16,7 @@ const MenuItem = ({ title, imageUrl, color}) => (
                 {title}
             </div>
         </div>
-    </div>
+    </Link>
 );
 
 export default MenuItem;
