@@ -8,7 +8,8 @@ class ShopPage extends React.Component {
     super(props);
 
     this.state = {
-      collections: SHOP_DATA
+      collections: SHOP_DATA,
+      cat:3
     };
   }
 
@@ -17,12 +18,12 @@ class ShopPage extends React.Component {
     return (
       <div className='shop-page'>
         <div className="cathegory-list">
-          <div className="catall">All Products</div>
-          <div className="cat1">T-Shirt</div>
-          <div className="cat2">Footwear</div>
-          <div className="cat3">Pants</div>
+          <div className="catall" onClick={()=>this.setState({cat:3})}>All Products</div>
+          <div className="cat1" onClick={()=>this.setState({cat:0})}>T-Shirt</div>
+          <div className="cat2" onClick={()=>this.setState({cat:1})}>Footwear</div>
+          <div className="cat3" onClick={()=>this.setState({cat:2})}>Jackets</div>
         </div>
-        {collections.map(({ id, ...otherCollectionProps }) => (
+        {collections.filter((collect,ids) => this.state.cat<3 ? ids===this.state.cat : true).map(({ id, ...otherCollectionProps }) => (
           <CollectionPreview key={id} {...otherCollectionProps} />
         ))}
       </div>
