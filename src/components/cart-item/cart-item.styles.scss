@@ -1,7 +1,14 @@
 .cart-item{
     margin: 10px 0;
     .item-details{
+        .name{
+            width: 200px;
+        }
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        .delete{
+            cursor: pointer;
+        }
     }
 }

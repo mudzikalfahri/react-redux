@@ -7,16 +7,16 @@ import { connect } from 'react-redux';
 const CartButton = ({setToggleCart, cartItems}) => {
     return (
         <div className='cart' onClick={setToggleCart}>
-            <Cart/>
             <div className="cart-num">
-                {cartItems.length}
+                {cartItems}
             </div>
+            <Cart/>
         </div>
     )
 }
 
 const mapStateToProps = ({ cart: { cartItems } }) => ({
-    cartItems
+    cartItems: cartItems.reduce((quantity, cartItem) => (quantity + cartItem.quantity), 0)
   });
 
 const mapDispatchToProps = dispatch => ({
