@@ -2,7 +2,7 @@
     width: 24%;
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 300px;
     align-items: center;
     margin-bottom: 30px;
     overflow: hidden;
@@ -27,39 +27,36 @@
       width: 100%;
       height: 130px;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #fff;
-      justify-content: center;
+      align-items: flex-end;
+      bottom: 0px;
+      justify-content: space-between;
       position: absolute;
       font-size: 13px;
-      bottom: -30px;
       transition: 0.5s;
-      button{
+      .addcart{
         margin-top: 10px;
         position: relative;
-        top: 50px;
-        transition: 0.5s;
         border: none;
-        background-color: white;
-        text-decoration: underline;
+        background-color: #fff;
         cursor: pointer;
-      }
-      span{
-        margin: 5px;
-      }
-      &:hover{
-        bottom: 0px;
-        button{
-          top: 0px;
+        transition: 0.2s;
+        &:hover{
+          background-color: #6FFFFF;
         }
       }
-      .title-footer{
-          color: #B8B8B8;
+      .name-pr{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .name{
+          background-color: #fff;
+          margin-bottom: 5px;
         }
-        .name {
-          width: 100%;
-          text-align: center;
+        .price{
+          width: 30%;
+          background-color: #fff;
         }
+      }
     }
   }

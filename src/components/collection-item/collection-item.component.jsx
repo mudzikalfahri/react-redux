@@ -3,6 +3,7 @@ import { addItem } from '../../redux/cart-button/cart-actions';
 import { connect } from 'react-redux';
 import './collection-item.styles.scss';
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
+import { ReactComponent as Cart } from '../../assets/cart-shop.svg';
 
 const CollectionItem = ({item, title, addItem}) => {
   const { name, price, imageUrl } = item;
@@ -17,10 +18,13 @@ const CollectionItem = ({item, title, addItem}) => {
     </LazyLoadComponent>
     
     <div className='collection-footer'>
-        <span className='title-footer'>{title}</span>
-        <span className='name'>{name}</span>
-        <span className='price'>$ {price}</span>
-        <button className='addcart' onClick={() => addItem(item)}>Add to cart</button>
+        <div className="name-pr">
+          <span className='name'>{name}</span>
+          <span className='price'>$ {price}</span>
+        </div>
+        <button className='addcart' onClick={() => addItem(item)}>
+          <Cart className='cart'/>
+          </button>
     </div>
   </div>
 )};
