@@ -8,7 +8,7 @@ const CollectionItem = ({item, title, addItem}) => {
   const { name, price, imageUrl } = item;
   return(
   <div className='collection-item'>
-    <LazyLoadComponent threshold={200} effect="blur">
+    <LazyLoadComponent>
       <div
       className='image'
       style={{
