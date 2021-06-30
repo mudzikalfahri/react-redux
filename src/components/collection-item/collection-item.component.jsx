@@ -2,17 +2,20 @@ import React from 'react';
 import { addItem } from '../../redux/cart-button/cart-actions';
 import { connect } from 'react-redux';
 import './collection-item.styles.scss';
+import { LazyLoadComponent } from 'react-lazy-load-image-component';
 
 const CollectionItem = ({item, title, addItem}) => {
   const { name, price, imageUrl } = item;
   return(
   <div className='collection-item'>
-    <div
+    <LazyLoadComponent threshold={200} effect="blur">
+      <div
       className='image'
       style={{
         backgroundImage: `url(${imageUrl})`
-      }}
-    />
+      }}/>
+    </LazyLoadComponent>
+    
     <div className='collection-footer'>
         <span className='title-footer'>{title}</span>
         <span className='name'>{name}</span>
