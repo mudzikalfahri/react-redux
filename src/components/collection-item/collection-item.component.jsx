@@ -1,22 +1,32 @@
-import React from 'react';
 import { addItem } from '../../redux/cart-button/cart-actions';
 import { connect } from 'react-redux';
 import './collection-item.styles.scss';
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
 import { ReactComponent as Cart } from '../../assets/cart-shop.svg';
+import { useEffect, useState } from 'react';
+import Skeleton from 'react-loading-skeleton';
 
 const CollectionItem = ({item, title, addItem}) => {
+  const[loading,setLoading] = useState(false);
+  useEffect(() =>{
+    setLoading(true)
+    const timing = setTimeout(() => {
+      setLoading(false)
+    }, 4000);
+    return () => clearTimeout(timing)
+  }, []);
+
   const { name, price, imageUrl } = item;
-  return(
+  return (
   <div className='collection-item'>
-    <LazyLoadComponent>
+    {loading && <Skeleton animation="wave" variant="rect" width={250} height={300}/>}
+    {!loading && <LazyLoadComponent>
       <div
       className='image'
       style={{
         backgroundImage: `url(${imageUrl})`
       }}/>
-    </LazyLoadComponent>
-    
+    </LazyLoadComponent>}
     <div className='collection-footer'>
         <div className="name-pr">
           <span className='name'>{name}</span>
