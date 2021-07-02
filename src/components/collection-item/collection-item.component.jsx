@@ -19,7 +19,7 @@ const CollectionItem = ({item, title, addItem}) => {
   const { name, price, imageUrl } = item;
   return (
   <div className='collection-item'>
-    {loading && <Skeleton animation="wave" variant="rect" width={250} height={300}/>}
+    {loading && <Skeleton animation="wave" variant="rect" width={500} height={300}/>}
     {!loading && <LazyLoadComponent>
       <div
       className='image'
