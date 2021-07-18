@@ -11,7 +11,7 @@ const MenuItem = ({ title, imageUrl, color}) => {
         setLoading(true)
         const timing = setTimeout(() => {
         setLoading(false)
-        }, 3000);
+        }, 2000);
         return () => clearTimeout(timing)
     }, []);
 
